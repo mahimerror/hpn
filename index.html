@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>New year</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="responsive.css">
+	<script src="parallax.js"></script>
+</head>
+<body>
+	<div class="contaner">
+		<div class="cen">
+			<img src="text.png">
+		</div>
+		<div class="center">
+			<ul id="scene">
+				<li class="layer" data-depth="1"><img src="planet1.png"></li>
+				<li class="layer" data-depth="-1"><img src="planet2.png"></li>
+				<li class="layer" data-depth="2"><img src="astronaut.png"></li>
+				<li class="layer" data-depth="0.5"><img src="rocket.png"></li>
+			</ul>
+		</div>
+	</div>
+	<script>
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+	</script>
+</body>
+</html>
